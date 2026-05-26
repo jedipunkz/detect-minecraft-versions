@@ -1,25 +1,39 @@
 {
   "latest": {
     "stable": {
-      "version": "1.26.21.1",
-      "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.26.21.1.zip",
-      "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.26.21.1.zip",
-      "releasedAt": "2026-05-14T16:15:39.328Z"
+      "version": "1.26.23.1",
+      "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.26.23.1.zip",
+      "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.26.23.1.zip",
+      "releasedAt": "2026-05-26T15:48:06.384Z"
     },
     "preview": {
+      "version": "1.26.30.32",
+      "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win-preview/bedrock-server-1.26.30.32.zip",
+      "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux-preview/bedrock-server-1.26.30.32.zip",
+      "releasedAt": "2026-05-26T15:48:06.384Z"
+    }
+  },
+  "history": [
+    {
+      "type": "preview",
       "version": "1.26.30.30",
       "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win-preview/bedrock-server-1.26.30.30.zip",
       "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux-preview/bedrock-server-1.26.30.30.zip",
       "releasedAt": "2026-05-19T17:28:08.405Z"
-    }
-  },
-  "history": [
+    },
     {
       "type": "preview",
       "version": "1.26.30.29",
       "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win-preview/bedrock-server-1.26.30.29.zip",
       "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux-preview/bedrock-server-1.26.30.29.zip",
       "releasedAt": "2026-05-19T15:45:03.092Z"
+    },
+    {
+      "type": "stable",
+      "version": "1.26.21.1",
+      "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.26.21.1.zip",
+      "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.26.21.1.zip",
+      "releasedAt": "2026-05-14T16:15:39.328Z"
     },
     {
       "type": "preview",
