@@ -1,41 +1,41 @@
-# name: Update Minecraft Bedrock Versions
-# 
-# on:
-#   schedule:
-#     - cron: '30 * * * *'
-#   workflow_dispatch:
-# 
-# permissions:
-#   contents: write
-# 
-# jobs:
-#   update-versions:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v4
-# 
-#       - name: Detect Minecraft Bedrock versions
-#         id: detect
-#         uses: ./
-#         with:
-#           output-file: 'versions.json'
-# 
-#       - name: Display version info
-#         run: |
-#           echo "Updated: ${{ steps.detect.outputs.updated }}"
-#           echo "Stable version: ${{ steps.detect.outputs.stable-version }}"
-#           echo "Preview version: ${{ steps.detect.outputs.preview-version }}"
-#           echo "Has changes: ${{ steps.detect.outputs.has-changes }}"
-# 
-#       - name: Commit and push changes
-#         if: steps.detect.outputs.has-changes == 'true'
-#         run: |
-#           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-#           git config --local user.name "github-actions[bot]"
-#           git add versions.json
-#           git commit -m "Update Minecraft Bedrock versions
-# 
-#           Stable: ${{ steps.detect.outputs.stable-version }}
-#           Preview: ${{ steps.detect.outputs.preview-version }}"
-#           git push
+name: Update Minecraft Bedrock Versions
+
+on:
+  schedule:
+    - cron: '30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Detect Minecraft Bedrock versions
+        id: detect
+        uses: ./
+        with:
+          output-file: 'versions.json'
+
+      - name: Display version info
+        run: |
+          echo "Updated: ${{ steps.detect.outputs.updated }}"
+          echo "Stable version: ${{ steps.detect.outputs.stable-version }}"
+          echo "Preview version: ${{ steps.detect.outputs.preview-version }}"
+          echo "Has changes: ${{ steps.detect.outputs.has-changes }}"
+
+      - name: Commit and push changes
+        if: steps.detect.outputs.has-changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add versions.json
+          git commit -m "Update Minecraft Bedrock versions
+
+          Stable: ${{ steps.detect.outputs.stable-version }}
+          Preview: ${{ steps.detect.outputs.preview-version }}"
+          git push
