@@ -7,13 +7,20 @@
       "releasedAt": "2026-09-16T08:35:15.693Z"
     },
     "preview": {
+      "version": "1.26.60.25",
+      "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win-preview/bedrock-server-1.26.60.25.zip",
+      "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux-preview/bedrock-server-1.26.60.25.zip",
+      "releasedAt": "2026-09-16T18:15:41.965Z"
+    }
+  },
+  "history": [
+    {
+      "type": "preview",
       "version": "1.26.60.23",
       "windows": "https://www.minecraft.net/bedrockdedicatedserver/bin-win-preview/bedrock-server-1.26.60.23.zip",
       "linux": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux-preview/bedrock-server-1.26.60.23.zip",
       "releasedAt": "2026-09-16T08:35:15.693Z"
-    }
-  },
-  "history": [
+    },
     {
       "type": "stable",
       "version": "1.26.34.3",
