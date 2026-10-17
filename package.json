@@ -1,6 +1,6 @@
 {
   "name": "detect-minecraft-versions",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "GitHub Action to detect and track Minecraft Bedrock Edition versions",
   "type": "module",
   "scripts": {
